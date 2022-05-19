@@ -23,16 +23,16 @@ const StudentContent = ({students}: StudentProps) => {
                                     <h4>Varsta</h4>
                                 </td>
                                 <td>
-                                    <h4>Genul</h4>
+                                    <h4>Genul si specia</h4>
                                 </td>
                                 <td>
                                     <h4>Inaltimea</h4>
                                 </td>
                                 <td>
-                                    <h4>Univer</h4>
+                                    <h4>Universitatea</h4>
                                 </td>
                                 <td>
-                                    <h4>Specialitate</h4>
+                                    <h4>Specialitatea</h4>
                                 </td>
                                 
                             </tr>
@@ -53,7 +53,6 @@ const StudentContent = ({students}: StudentProps) => {
                         </tbody>
                     </table>
                 </div>
-
         </Content>
     )
 }
