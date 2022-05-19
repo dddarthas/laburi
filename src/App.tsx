@@ -1,28 +1,23 @@
 import React from 'react';
 import './App.css';
-import LayoutContent from "./components/Layout";
-import {Overview} from "./components/Overview";
-import rootStore from './mst/Provider.store';
-
+import Registration from './components/Registration';
+import *as userData from './mockData/users.json';
 
 function App() {
-  function refreshPage() {
-    window.location.reload();
-  }
-
+  const [appRendered, setAppRendered] = React.useState(false)
+  if (!appRendered)
+    if(!localStorage.getItem("lab6")){
+      localStorage.setItem("lab6",JSON.stringify(userData))
+      setAppRendered(true)
+    }
+    
   return (
     <div className="App">
-        <LayoutContent
-        />
-        <Overview students={rootStore.students}
-        />
-        <button onClick={rootStore.saveToLocalStorage}>Save to LocalStorage</button>
-        <br />
-        <button onClick={rootStore.clearLocalStorage}>Clear LocalStorage</button>
-        <br />
-        <button onClick={rootStore.setLocalStorageTestData}>Set LocalStorage test data</button>
-        <br />
-        <button onClick={refreshPage}>Click to reload!</button>
+      <div className="outer">
+        
+        <Registration/>
+        
+        </div>
     </div>
   );
 }
