@@ -5,4 +5,9 @@ interface Person {
     age:number
     height:number
 }
-export default Person;
+interface Student extends Person {
+    university: string
+    speciality: string
+}
+
+export default Student;
