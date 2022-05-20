@@ -11,7 +11,7 @@ const infoStudent = [
     secondName:"Daniel",
     gender:"male",
     age:21,
-    height:200,
+    height:180,
     univerity: "UTM",
     speciality:"Robotics snd Mecatronics",
   },
@@ -32,8 +32,18 @@ const infoStudent = [
     age:22,
     height:200,
     univerity: "USM",
-    speciality:"Tehnologia Informatie",
-  }
+    speciality:"Tehnologia Informatiei",
+  },
+  {
+      firstName: "Focsa",
+      secondName:"Paula",
+      gender:"famle",
+      age:18,
+      height:180,
+      univerity: "Liceu",
+      speciality:"trei puncte",
+
+    }
 ]
 
 function App() {
@@ -41,7 +51,7 @@ function App() {
     <div className="App">
         <Layout_content
         />
-        <StudenOverview 
+        <StudenOverview
         students = {infoStudent}
         />
     </div>
