@@ -53,24 +53,24 @@ const initialState = {
     persons: [
         {
             id: 'p-001',
-            firstName: "Petru",
-            secondName:"Cristea",
+            firstName: "Focsa",
+            secondName:"Daniel",
             gender:"male",
             age:21,
             height:200
         },
         {
             id: 'p-002',
-            firstName: "Rusnac",
-            secondName:"Sandu",
+            firstName: "Babei",
+            secondName:"Vadim",
             gender:"male",
             age:13,
             height:30
         },
         {
             id: 'p-003',
-            firstName: "Jimbei",
-            secondName:"Alexandru",
+            firstName: "Focsa",
+            secondName:"Paula",
             gender:"male",
             age:22,
             height:180
@@ -86,40 +86,15 @@ const initialState = {
     {
         id: 'st-002',
         personId: 'p-002',
-        university: "Hogwarts",
-        speciality:"Slytherin"
+        university: "USM",
+        speciality:"TI"
     },
     {
         id: 'st-003',
         personId: 'p-003',
-        university: "UTM",
-        speciality:"RM"
+        university: "liceu",
+        speciality:"nu stie"
     }
     ]
 }
 export default rootStore
-//   if (process.browser) {
-    // const data = localStorage.getItem("rootState");
-    // if (data) {
-    //     const json = JSON.parse(data);
-    //     if (Root.create(json)) {
-    //         initialState = Root.create(json);
-    //     }
-    // }
-//   }
-//   onSnapshot(rootStore, (snapshot) => {
-//     console.log("Snapshot: ", snapshot);
-//     localStorage.setItem("rootState", JSON.stringify(snapshot));
-//   });
-
-// export type RootInstance = Instance<typeof Root>;
-// const RootStoreContext = createContext<null | RootInstance>(null);
-// export const Provider = RootStoreContext.Provider;
-// export function useMst() {
-//     const store = useContext(RootStoreContext);
-//     if (store === null) {
-//         throw new Error("Store cannot be null, please add a context provider");
-//     }
-//     console.log(store)
-//     return store;
-// }
