@@ -51,48 +51,48 @@ const rootStore = Root.create({})
 const initialState = {
     persons: [
         {
-            id: 'p-001',
-            firstName: "Petru",
-            secondName:"Cristea",
+            id: 'p-01',
+            firstName: "Focsa",
+            secondName:"Daniel",
             gender:"male",
             age:21,
+            height:180
+        },
+        {
+            id: 'p-02',
+            firstName: "Babei",
+            secondName:"Vadim",
+            gender:"male",
+            age:23,
             height:200
         },
         {
-            id: 'p-002',
-            firstName: "Rusnac",
-            secondName:"Sandu",
-            gender:"male",
-            age:13,
-            height:30
-        },
-        {
-            id: 'p-003',
-            firstName: "Jimbei",
-            secondName:"Alexandru",
-            gender:"male",
-            age:22,
+            id: 'p-03',
+            firstName: "Focsa",
+            secondName:"Paula",
+            gender:"famle",
+            age:18,
             height:180
         },
     ],
     students: [
     {
-        id: 'st-001',
-        personId: 'p-001',
+        id: 'st-01',
+        personId: 'p-01',
         university: "UTM",
         speciality:"RM"
     },
     {
-        id: 'st-002',
-        personId: 'p-002',
-        university: "Hogwarts",
-        speciality:"Slytherin"
+        id: 'st-02',
+        personId: 'p-02',
+        university: "USM",
+        speciality:"TI"
     },
     {
-        id: 'st-003',
-        personId: 'p-003',
-        university: "UTM",
-        speciality:"RM"
+        id: 'st-03',
+        personId: 'p-03',
+        university: "liceu",
+        speciality:"trei puncte"
     }
     ]
 }
